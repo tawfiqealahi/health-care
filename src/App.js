@@ -4,11 +4,10 @@ import Gallery from './Components/Gallery/Gallery';
 import HomePage from './Components/HomePage/HomePage';
 import Services from './Components/Services/Services';
 import Faq from './Components/Faq/Faq';
-import Navbar from './Components/Header/Navbar/Navbar';
 import AboutUs from './Components/AboutUs/AboutUs';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
-import Banner from './Components/Header/Banner/Banner';
 import Login from './Components/Login/Login';
+import Register from './Components/Login/Register/Register';
 
 
 function App() {
@@ -40,6 +39,9 @@ function App() {
         </Route>
         <Route exact path="/login">
           <Login></Login>
+        </Route>
+        <Route exact path="/register">
+          <Register></Register>
         </Route>
         <Route  path="*">
           <ErrorPage></ErrorPage>

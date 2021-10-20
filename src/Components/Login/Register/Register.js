@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Login.css";
+import "./Register.css";
 import { Col, Form, InputGroup, Button, Row } from "react-bootstrap";
-import MenuBar from "../Header/Navbar/Navbar";
 import { GrGoogle } from "react-icons/gr";
 import { GoMarkGithub } from "react-icons/go";
+import MenuBar from "../../Header/Navbar/Navbar";
 import { Link } from "react-router-dom";
-import Register from "./Register/Register";
 
-function Login() {
+function Register() {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
@@ -25,9 +24,10 @@ function Login() {
     <>
       <MenuBar></MenuBar>
       <h1 className="text-center text-success pt-3 fw-bolder  ">
-        SIGN IN
+        Registration Form
       </h1>
-      <p className="text-center pt-1">Don't have an account? <Link to="/register"> Sign Up / Registration  </Link> </p>
+      <p className="text-center pt-1">Already have an account? <Link to="/login"> Sign In  </Link> </p>
+
       <div className="full-form">
         <Form
           className=" form-body"
@@ -36,7 +36,7 @@ function Login() {
           onSubmit={handleSubmit}
         >
           <Row className="">
-            <Form.Group as={Col} md="6" controlId="validationCustom01">
+            <Form.Group as={Col} md="4" controlId="validationCustom01">
               <Form.Label>First name</Form.Label>
               <Form.Control required type="text" placeholder="First name" />
               <Form.Control.Feedback>
@@ -44,7 +44,7 @@ function Login() {
                 <small>Looks good!</small>
               </Form.Control.Feedback>
             </Form.Group>
-            <Form.Group as={Col} md="6" controlId="validationCustom02">
+            <Form.Group as={Col} md="4" controlId="validationCustom02">
               <Form.Label>Last name</Form.Label>
               <Form.Control required type="text" placeholder="Last name" />
               <Form.Control.Feedback>
@@ -52,7 +52,21 @@ function Login() {
                 <small>Looks good!</small>
               </Form.Control.Feedback>
             </Form.Group>
-           
+            <Form.Group as={Col} md="4" controlId="validationCustomUsername">
+              <Form.Label>Username</Form.Label>
+              <InputGroup hasValidation>
+                <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
+                <Form.Control
+                  type="text"
+                  placeholder="Username"
+                  aria-describedby="inputGroupPrepend"
+                  required
+                />
+                <Form.Control.Feedback type="invalid">
+                  <small>Please choose a username.</small>
+                </Form.Control.Feedback>
+              </InputGroup>
+            </Form.Group>
           </Row>
           <Row className="mb-3">
             <Form.Group as={Col} md="7" controlId="validationCustom03">
@@ -70,6 +84,29 @@ function Login() {
             
           </Row>
 
+          <Row className="mb-3">
+            <Form.Group as={Col} md="6" controlId="validationCustom03">
+              <Form.Label>City</Form.Label>
+              <Form.Control type="text" placeholder="City" required />
+              <Form.Control.Feedback type="invalid">
+                <small>Please provide a valid city.</small>
+              </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} md="3" controlId="validationCustom04">
+              <Form.Label>State</Form.Label>
+              <Form.Control type="text" placeholder="State" required />
+              <Form.Control.Feedback type="invalid">
+                <small>Please provide a valid state.</small>
+              </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} md="3" controlId="validationCustom05">
+              <Form.Label>Zip</Form.Label>
+              <Form.Control type="text" placeholder="Zip" required />
+              <Form.Control.Feedback type="invalid">
+                <small>Please provide a valid zip.</small>
+              </Form.Control.Feedback>
+            </Form.Group>
+          </Row>
           <Row className="mb-3">
           <Form.Group as={Col} md="7" controlId="validationCustom03">
               <Form.Label>Password</Form.Label>
@@ -102,7 +139,6 @@ function Login() {
               feedbackType="invalid"
             />
           </Form.Group>
-          
           <Row>
             <div className="col-md-4">
               <Button className=" d-flex justify-center " type="submit">
@@ -136,4 +172,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;

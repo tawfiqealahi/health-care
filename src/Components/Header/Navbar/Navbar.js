@@ -1,10 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
-import {Link, NavLink} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import {  Button, Container, Nav, Navbar, } from 'react-bootstrap';
 import logo from '../../../images/logo.png'
-import { GiHamburgerMenu } from 'react-icons/gi';
 
 const MenuBar= () => {
     return (
@@ -25,12 +24,7 @@ const MenuBar= () => {
           <NavLink className="menu-item" to="/faq" >FAQ</NavLink>
           <NavLink className="menu-item" to="/login" >   <Button className="fw-bolder fs-5" variant="primary">Sign In</Button> </NavLink> 
 
-                     {/* hamburger menu start */}
-                     <div className="toggle-menu">
-                         <a href="#">
-                         <GiHamburgerMenu></GiHamburgerMenu>
-                         </a>
-                     </div>
+                   
                  </Nav>
             
            
