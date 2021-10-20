@@ -2,13 +2,16 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
 import { NavLink} from "react-router-dom";
-import {  Button, Container, Nav, Navbar, } from 'react-bootstrap';
+import {  Button,  Nav,  Navbar, } from 'react-bootstrap';
 import logo from '../../../images/logo.png'
+import useFirebase from '../../../Hooks/useFirebase';
 
 const MenuBar= () => {
+    const {user, logOut}=useFirebase();
+
     return (
         <>
-        <Container>
+        
         <Navbar className="menu mx-2 " variant="dark">
             
            
@@ -22,15 +25,19 @@ const MenuBar= () => {
           <NavLink className="menu-item" to="/services" >Services</NavLink>
           <NavLink className="menu-item" to="/aboutus" >About</NavLink>
           <NavLink className="menu-item" to="/faq" >FAQ</NavLink>
-          <NavLink className="menu-item" to="/login" >   <Button className="fw-bolder fs-5" variant="primary">Sign In</Button> </NavLink> 
+          <div className="menu-item fs-bolder "><span>{user.displayName}</span></div>
 
+{user?  
+    <Button onclick={logOut}>Log out</Button> 
+    : <NavLink className="menu-item" to="/login" >   <Button className="fw-bolder fs-5" variant="primary">Log In</Button> </NavLink> 
+
+    
+}
                    
                  </Nav>
             
-           
-
         </Navbar>
-        </Container>         
+                 
          
         </>
     );

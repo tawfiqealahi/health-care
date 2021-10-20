@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Login.css";
-import { Col, Form, InputGroup, Button, Row } from "react-bootstrap";
+import { Col, Form,  Button, Row } from "react-bootstrap";
 import MenuBar from "../Header/Navbar/Navbar";
 import { GrGoogle } from "react-icons/gr";
 import { GoMarkGithub } from "react-icons/go";
 import { Link } from "react-router-dom";
-import Register from "./Register/Register";
+import useFirebase from "../../Hooks/useFirebase";
 
 function Login() {
+    const {user , signInUsingGoogle}=useFirebase(); 
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
@@ -122,6 +123,7 @@ function Login() {
             <div className="col-md-4 mt-1">
               {/* google button */}
               <Button
+              onClick={signInUsingGoogle}
                 className=" d-flex bg-success justify-center "
                 type="submit"
               >
