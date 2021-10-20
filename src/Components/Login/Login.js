@@ -67,7 +67,7 @@ function Login() {
         </Form.Group>
         <Form.Group as={Col} md="6" controlId="validationCustom03" >
         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control type="password" required placeholder="Password" />
         </Form.Group>
 
         </Row>
