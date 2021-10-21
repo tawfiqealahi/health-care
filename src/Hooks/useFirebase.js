@@ -19,11 +19,11 @@ const useFirebase=()=>{
     }
 // log out
 const logOut =()=>{
-    signOut(auth)
-    .then(() => {
+    signOut(auth).then(() => {
         // Sign-out successful.
-    setUser({})  
-    });
+      }).catch((error) => {
+        // An error happened.
+      });
 }
   
 

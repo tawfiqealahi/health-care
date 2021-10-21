@@ -1,14 +1,12 @@
 import React from 'react';
 import { Button, } from 'react-bootstrap';
-import Footer from '../Footer/Footer';
-import MenuBar from '../Header/Navbar/Navbar';
-import './Faq.css';
+import Footer from '../../Footer/Footer';
+import './FaqShort.css';
 
-const Faq = () => {
+const FaqShort = () => {
     return (
      <div>
-         <MenuBar></MenuBar>
-            <h1 className="text-center fw-bolder pt-2">ASK ME !!!</h1>
+            <h1 className="text-center fw-bolder border border-3 bg-Secondary py-3  pt-2">ASK ME SOMETHING !!!</h1>
             <div className=" container-fluid">
             <div className="row faq my-4 text-center">
             <div className="col-md-6  left-part ">
@@ -31,4 +29,4 @@ const Faq = () => {
     );
 };
 
-export default Faq;
+export default FaqShort;

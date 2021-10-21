@@ -1,13 +1,11 @@
 import React from 'react';
 import { Button, } from 'react-bootstrap';
 import Footer from '../Footer/Footer';
-import MenuBar from '../Header/Navbar/Navbar';
-import './Faq.css';
+import './FaqShort.css';
 
 const Faq = () => {
     return (
      <div>
-         <MenuBar></MenuBar>
             <h1 className="text-center fw-bolder pt-2">ASK ME !!!</h1>
             <div className=" container-fluid">
             <div className="row faq my-4 text-center">
