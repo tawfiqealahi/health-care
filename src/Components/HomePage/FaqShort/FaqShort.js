@@ -23,7 +23,7 @@ const FaqShort = () => {
             </div>
           
         </div>
-        <Footer></Footer>
+    
      </div>   
      
     );

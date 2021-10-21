@@ -16,9 +16,7 @@ const DoctorsTeam = () => {
       <Card.Title>Dr. Mira <small>(surgeon)</small> </Card.Title>
      
     </Card.Body>
-    <Card.Footer>
-     
-    </Card.Footer>
+    
   </Card>
   <Card className="m-2">
     <Card.Img variant="top" className="doctor-img" src={doctor2} />
@@ -26,9 +24,7 @@ const DoctorsTeam = () => {
       <Card.Title>Dr. Tawfiq <small>(medicine)</small> </Card.Title>
       
     </Card.Body>
-    <Card.Footer>
-     
-    </Card.Footer>
+    
   </Card>
   <Card className="m-2">
     <Card.Img variant="top" className="doctor-img" src={doctor3} />
@@ -36,9 +32,7 @@ const DoctorsTeam = () => {
       <Card.Title>Dr. Asfiya<small> (neuro)</small> </Card.Title>
      
     </Card.Body>
-    <Card.Footer>
-     
-    </Card.Footer>
+   
   </Card>
 </CardGroup>
         </div>
