@@ -2,6 +2,8 @@
 healthcare-related-website-tawfiqealahi created by GitHub Classroom
 live link: https://health-care-shasthye.web.app/home
 
+live link: https://health-care-shasthye.web.app/home
+
 ##used
 
 1. react app build
