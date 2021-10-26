@@ -6,6 +6,7 @@ const ServicesDetails = () => {
     useEffect(()=>{
         fetch('/services.json')
         .then((res) => res.json() )
+        .then(data=>console.log(data))
     },[])
     return (
         <div>
