@@ -8,6 +8,7 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Login from './Components/Login/Login';
 import Register from './Components/Login/Register/Register';
+import ServicesDetails from './Components/HomePage/ServicesDetails/ServicesDetails';
 
 
 function App() {
@@ -37,6 +38,11 @@ function App() {
         <Route exact path="/aboutus">
           <AboutUs></AboutUs>
         </Route>
+        <Route exact path="/servicedetails/:id">
+        <ServicesDetails></ServicesDetails>
+
+        </Route>
+
         <Route exact path="/login">
           <Login></Login>
         </Route>
