@@ -25,6 +25,7 @@ const useFirebase=()=>{
             const errorMessage=error.message;
             console.log(errorCode,errorMessage);
           });
+          
     }
 // log out
 const logOut =()=>{

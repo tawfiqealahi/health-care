@@ -34,15 +34,14 @@ const MenuBar= () => {
           <NavLink className="menu-item" to="/services" >Services</NavLink>
           <NavLink className="menu-item" to="/aboutus" >About</NavLink>
           <NavLink className="menu-item" to="/faq" >FAQ</NavLink>
-          <NavLink className="menu-item" to="/login" >Login</NavLink>
           <div className="menu-itemId mx-3 "><span> {user.displayName} </span></div>
 
-{user?  
-    <Button onclick={logOut}>Log out</Button> 
-    : <NavLink className="menu-item" to="/login" >   <Button onPress={() => this.signOutUser()}
-    className="fw-bolder fs-5" variant="primary">Log In</Button> </NavLink> 
-
+{user.email?  
     
+     <NavLink className="menu-item" to="/login" >   <Button onPress={() => this.signOutUser()}
+    className="fw-bolder fs-5" variant="primary">Log In</Button> </NavLink> 
+  :
+    <Button onclick={logOut}>Log out</Button> 
 }
                    
                  </Nav>
