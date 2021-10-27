@@ -46,11 +46,11 @@ const MenuBar = () => {
                   className="fw-bolder fs-5"
                   variant="primary"
                 >
-                  Log In
+                  Log out
                 </Button>{" "}
               </NavLink>
             ) : (
-              <Button onclick={logOut}>Log out</Button>
+              <Button onclick={logOut}>Log in</Button>
             )}
           </Nav>
         </Navbar.Collapse>
