@@ -1,16 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
 const ServicesDetails = () => {
     const {id}= useParams();
+    const [data, setData]=useState([]);
     useEffect(()=>{
         fetch('/services.json')
         .then((res) => res.json() )
-        .then(data=>console.log(data))
+        .then(data=>setData(data))
     },[])
     return (
-        <div>
-            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing {id} <br /> elit. Quae, amet? Recusandae rem quos libero <br /> possimus maiores molestiae iste consectetur esse?</h1>
+        <div className="text-center">
+            
+            <h2>Doctor: {data[0]?.doctor}</h2>
+            <h2>Specialist: {data[0]?.specialist}</h2>
+            <h2>Fees: {data[0]?.price}</h2>
+            <h2>available: {data[0]?.available}</h2>
+                  
+           
         </div>
     );
 };

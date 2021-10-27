@@ -6,10 +6,11 @@ import MenuBar from "../Header/Navbar/Navbar";
 import { GrGoogle } from "react-icons/gr";
 import { GoMarkGithub } from "react-icons/go";
 import { Link } from "react-router-dom";
-import useFirebase from "../../Hooks/useFirebase";
+// import useFirebase from "../../Hooks/useFirebase";
+import useAuth from "../../Hooks/useAuth";
 
 function Login() {
-    const {user , signInUsingGoogle}=useFirebase(); 
+    const { signInUsingGoogle}=useAuth(); 
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {

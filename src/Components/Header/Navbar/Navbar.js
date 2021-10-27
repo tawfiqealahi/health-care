@@ -34,6 +34,7 @@ const MenuBar= () => {
           <NavLink className="menu-item" to="/services" >Services</NavLink>
           <NavLink className="menu-item" to="/aboutus" >About</NavLink>
           <NavLink className="menu-item" to="/faq" >FAQ</NavLink>
+          <NavLink className="menu-item" to="/login" >Login</NavLink>
           <div className="menu-itemId mx-3 "><span> {user.displayName} </span></div>
 
 {user?  

@@ -9,12 +9,15 @@ import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Login from './Components/Login/Login';
 import Register from './Components/Login/Register/Register';
 import ServicesDetails from './Components/HomePage/ServicesDetails/ServicesDetails';
+import AuthProvider from './Context/AuthProvider';
 
 
 function App() {
   return (
-    <div className="a">
-      
+    
+    
+    
+    <AuthProvider>
       <BrowserRouter>
       
       
@@ -54,7 +57,9 @@ function App() {
         </Route>
       </Switch>
       </BrowserRouter>
-    </div>
+      </AuthProvider>
+    
+    
   );
 }
 

@@ -7,15 +7,24 @@ initializeAuthentication();
 
 const useFirebase=()=>{
     const[user,setUser]=useState({});
+    
     const auth = getAuth();
-    const googleProvider = new GoogleAuthProvider();
 
     const signInUsingGoogle= () =>{
+
+        
+    const googleProvider = new GoogleAuthProvider();
+
         signInWithPopup(auth, googleProvider)
         .then(result=> {
             const user =(result.user);
             setUser(user);
-        })
+        }).catch((error) => {
+            // An error happened.
+            const errorCode= error.code;
+            const errorMessage=error.message;
+            console.log(errorCode,errorMessage);
+          });
     }
 // log out
 const logOut =()=>{
@@ -43,7 +52,7 @@ const logOut =()=>{
 
 
         }
-
+        
 }
 
 export default useFirebase;
