@@ -13,41 +13,65 @@ const Banner = () => {
           <MenuBar></MenuBar>
 
       {/* Banner start */}
+      
       <Carousel className="w-100 height   mx-auto carousel-items">
-      <Carousel.Item className="banner-items ">
-          <img className="image w-50 "  src={image1} alt="img1" />
-          <div className=" texts ">
+      <Carousel.Item className="banner-items px-2 ">
+         <div className="row">
+           <div className="col-md-4 col-sm-4">
+           <img className="image w-75 "  src={image1} alt="img1" />
+           
+           </div>
+           <div className="col-md-8 col-sm-8">
+
+           <div className=" texts ">
             <h1 className="fw-bolder">MEDIAL SERVICES THAT YOU CAN TRUST</h1>
-            <h5 class="pt-5">
+            <h5 class="pt-1">
               Need professional help? Our support staff will answer your
               questions. <br /> Visit us Now or Make an Appointment!
             </h5>
           </div>
+
+           </div>
+         </div>
         </Carousel.Item>
 
         <CarouselItem className="banner-items ">
-          <img src={image3}  className="image w-50 " alt="img1" />
+         <div className="row">
+           <div className="col-md-4 col-sm-4">
+           <img src={image3}  className="image w-75 " alt="img1" />
+
+           </div>
+           <div className="col-md-8 col-sm-8">
           <div className=" texts ">
             <h1 className="fw-bolder">WE MAKE QUALITY HEALTH CARE</h1>
-            <h5 class="pt-5">
+            <h5 class="pt-1">
               Need professional help? Our support staff will answer your
               questions. <br /> Visit us Now or Make an Appointment!
             </h5>
           </div>
+           </div>
+         </div>
         </CarouselItem>
 
         <CarouselItem className="banner-items ">
-          <img src={image2}  className="image w-50" alt="img2" />
+         <div className="row">
+           <div className="col-md-4 col-sm-4">
+           <img src={image2}  className="image w-75" alt="img2" />
+           </div>
+           <div className="col-md-8 col-sm-8">
           <div className=" texts">
             <h1 className="fw-bolder">MODERN TECHNOLOGY TREATMENT
  Doctor’s for health</h1>
-            <h5 class="pt-5">
+            <h5 class="pt-1">
           
             Need professional help? Our support staff will answer your
               questions. <br /> Visit us Now or Make an Appointment! 
  
             </h5>
           </div>
+
+           </div>
+         </div>
         </CarouselItem>
       </Carousel>
     </div>
