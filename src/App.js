@@ -45,9 +45,9 @@ function App() {
          <Route path="/doctorsTeam">
            <DoctorsTeam></DoctorsTeam>
          </Route>
-         <Route path="/gallery">
+         <PrivateRoute path="/gallery">
            <Gallery></Gallery>
-         </Route>
+         </PrivateRoute>
          <Route path="/faq">
            <Faq></Faq>
          </Route>
