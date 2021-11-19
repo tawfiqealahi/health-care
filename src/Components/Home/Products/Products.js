@@ -24,13 +24,13 @@ const Products = () => {
                 <h5 className="card-title">{product.title}</h5>
                 <h6>{product.price}</h6>
                 <p className="card-text">{product.describtion}</p>
-                
+
               </div>
               <Link to="/allProducts">
                 <div className="text-center p-3">
                   <Link to={`/products/${product.id}`}>
                     <div className="text-center p-3">
-                      <button className="btn btn-info">Buy Now</button>
+                      <button className="btn btn-info">Appointment</button>
 
                     </div>
                   </Link>

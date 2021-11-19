@@ -15,7 +15,7 @@ const Order = () => {
     formState: { errors },
   } = useForm();
 
-  
+
 
   const onSubmit = (data) => {
     data.email = user?.email;
@@ -67,12 +67,6 @@ const Order = () => {
                 className="p-2 m-2 w-100 input-field"
               />
 
-              <input
-                {...register("image", { required: true })}
-                placeholder="Image Link"
-                defaultValue={product.img}
-                className="p-2 m-2 w-100 input-field"
-              />
 
               <input
                 {...register("price", { required: true })}
@@ -86,7 +80,7 @@ const Order = () => {
         
               <input
                 type="submit"
-                value="Order now"
+                value="Appointment Now"
                 className="btn btn-info w-50"
               />
             </form>
