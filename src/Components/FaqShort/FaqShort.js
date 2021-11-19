@@ -1,9 +1,8 @@
 import React from 'react';
 import { Button, } from 'react-bootstrap';
-import Footer from '../Footer/Footer';
 import './FaqShort.css';
 
-const Faq = () => {
+const FaqShort = () => {
     return (
      <div>
             <h1 className="text-center fw-bolder pt-2">ASK ME !!!</h1>
@@ -28,4 +27,4 @@ const Faq = () => {
     );
 };
 
-export default Faq;
+export default FaqShort;

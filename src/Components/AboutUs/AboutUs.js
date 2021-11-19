@@ -2,12 +2,10 @@ import React from 'react';
 import './AboutUs.css';
 import image1 from '../../images/about img 1.jpg';
 import Footer from '../Footer/Footer';
-import MenuBar from '../Header/Navbar/Navbar';
 
 const AboutUs = () => {
     return (
         <div>
-            <MenuBar></MenuBar>
           <h1 className="text-center text-danger fw-bolder  my-4">ABOUT US</h1>
          <div className="container-fluid my-5">
          <div className="row">
@@ -24,7 +22,6 @@ Our Clinic has grown to provide a world class facility for the treatment of toot
               </div>
           </div>
          </div>
-         <Footer></Footer>
         </div>
     );
 };

@@ -17,7 +17,6 @@ import img12 from '../../images/landing_page_hotel_library (7).png';
 import img13 from '../../images/landing_page_hotel_library (6).jpg';
 import img14 from '../../images/landing_page_hotel_library (5).jpg';
 import img15 from '../../images/landing_page_hotel_library (4).jpg';
-import MenuBar from '../Header/Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
 
@@ -89,7 +88,6 @@ const Gallery = () => {
     
     return (
         <div>
-            <MenuBar></MenuBar>
              <div className="my-5">
       <div >
       <h2 className="text-center fw-bolder ">MEDICAL GALLERY</h2>
@@ -117,7 +115,6 @@ const Gallery = () => {
        </div>
           
       </div>
-           <Footer></Footer>
         </div>
     );
 };
