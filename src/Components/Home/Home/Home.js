@@ -16,8 +16,9 @@ const Home = () => {
             <DoctorsTeam></DoctorsTeam>
            <FaqShort></FaqShort>
             <About></About>
-            
+
         </div>
+        
     );
 };
 
