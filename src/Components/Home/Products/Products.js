@@ -6,8 +6,7 @@ const Products = () => {
   // const {user} = useAuth();
 
   useEffect(() => {
-
-    fetch('./productAll.json')
+    fetch("./productAll.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -31,6 +30,7 @@ const Products = () => {
                   <Link to={`/products/${product.id}`}>
                     <div className="text-center p-3">
                       <button className="btn btn-info">Buy Now</button>
+                      
                     </div>
                   </Link>
                 </div>
