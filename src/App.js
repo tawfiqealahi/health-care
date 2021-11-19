@@ -50,6 +50,7 @@ function App() {
          </PrivateRoute>
          <Route path="/faq">
            <Faq></Faq>
+           
          </Route>
          <Route path="/faqShort">
            <FaqShort></FaqShort>
