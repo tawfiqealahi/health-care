@@ -81,8 +81,7 @@ const Order = () => {
               <input
                 type="submit"
                 value="Appointment Now"
-                className="btn btn-info w-50"
-              />
+                className="btn btn-info w-50"/>
             </form>
           </div>
         </div>
