@@ -73,8 +73,7 @@ const Order = () => {
                 placeholder="Price"
                 defaultValue={product.price}
                 type="price"
-                className="p-2 m-2 w-100 input-field"
-              />
+                className="p-2 m-2 w-100 input-field" />
               <br />
 
         
