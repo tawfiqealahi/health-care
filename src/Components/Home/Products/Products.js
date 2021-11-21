@@ -6,6 +6,7 @@ const Products = () => {
   // const {user} = useAuth();
 
   useEffect(() => {
+    
     fetch("./productAll.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
