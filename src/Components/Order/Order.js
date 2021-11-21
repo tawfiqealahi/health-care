@@ -15,13 +15,11 @@ const Order = () => {
     formState: { errors },
   } = useForm();
 
-
-
   const onSubmit = (data) => {
     data.email = user?.email;
     console.log(data.email);
     data.status = "pending";
-  
+
     console.log(data);
   };
 
@@ -67,20 +65,20 @@ const Order = () => {
                 className="p-2 m-2 w-100 input-field"
               />
 
-
               <input
                 {...register("price", { required: true })}
                 placeholder="Price"
                 defaultValue={product.price}
                 type="price"
-                className="p-2 m-2 w-100 input-field" />
+                className="p-2 m-2 w-100 input-field"
+              />
               <br />
 
-        
               <input
                 type="submit"
                 value="Appointment Now"
-                className="btn btn-info w-50"/>
+                className="btn btn-info w-50"
+              />
             </form>
           </div>
         </div>
