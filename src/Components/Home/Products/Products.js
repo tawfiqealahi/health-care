@@ -12,7 +12,7 @@ const Products = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-  
+
   return (
     <div className="container my-5">
       <h1 className="text-center my-5">
@@ -33,7 +33,6 @@ const Products = () => {
                   <Link to={`/products/${product.id}`}>
                     <div className="text-center p-3">
                       <button className="btn btn-info">Appointment</button>
-
                     </div>
                   </Link>
                 </div>
