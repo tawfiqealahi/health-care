@@ -20,6 +20,7 @@ const Products = () => {
       </h1>
       <div className="row">
         {products.slice(0, 6).map((product) => (
+          
           <div key={product.id} className="col-md-4 mt-5">
             <div className="card h-100">
               <img src={product.img} className="card-img-top" alt="..." />
