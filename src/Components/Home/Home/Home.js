@@ -17,6 +17,7 @@ const Home = () => {
            <FaqShort></FaqShort>
             <About></About>
         </div>
+        
     );
 };
 
