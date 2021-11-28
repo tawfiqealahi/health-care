@@ -45,6 +45,7 @@ function App() {
          <Route path="/doctorsTeam">
            <DoctorsTeam></DoctorsTeam>
          </Route>
+         {/* private route */}
          <PrivateRoute path="/gallery">
            <Gallery></Gallery>
          </PrivateRoute>
